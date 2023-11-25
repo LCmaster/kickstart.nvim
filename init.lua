@@ -39,7 +39,12 @@ P.S. You can delete this when you're done too. It's your config now :)
 --]]
 
 -- [[ Loads custom files ]]
-require('custom')
+-- Install the plugin manager
+require('custom.plugins')
+-- Remap some commands 
+require('custom.remap')
+-- Customized options
+require('custom.set')
 
 -- [[ Highlight on yank ]]
 -- See `:help vim.highlight.on_yank()`
