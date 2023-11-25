@@ -1,3 +1,5 @@
+vim.g.mapleader = " " -- Make sure to set `mapleader` before lazy so your mappings are correct
+
 -- [[ Install `lazy.nvim` plugin manager ]]
 --    https://github.com/folke/lazy.nvim
 --    `:help lazy.nvim.txt` for more info
@@ -172,7 +174,22 @@ require('lazy').setup({
     },
     build = ':TSUpdate',
   },
+  
+  {'theprimeagen/harpoon', opts={} },
 
+  {
+    -- File Explorer
+    'nvim-tree/nvim-tree.lua',
+    dependencies = {
+      'nvim-tree/nvim-web-devicons',
+    },
+  },
+  
+  {
+    'akinsho/toggleterm.nvim', 
+    version = "*", 
+    config = true
+  },
   -- NOTE: Next Step on Your Neovim Journey: Add/Configure additional "plugins" for kickstart
   --       These are some example plugins that I've included in the kickstart repository.
   --       Uncomment any of the lines below to enable them.

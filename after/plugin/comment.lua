@@ -1,0 +1,5 @@
+require("Comment").setup()
+local api = require("Comment.api")
+local config = require("Comment.config"):get()
+vim.keymap.set('n', '<C-_>', api.toggle.linewise.current)
+vim.keymap.set('v', '<C-_>', api.call('toggle.blockwise', 'g@'), {expr = true})

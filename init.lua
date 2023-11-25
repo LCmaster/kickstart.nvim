@@ -39,11 +39,11 @@ P.S. You can delete this when you're done too. It's your config now :)
 --]]
 
 -- [[ Load config files ]]
-require('custom.plugins')
-require('custom.remap')
-require('custom.yank')
-require('custom.cmp')
-require('custom.set')
+require('config.plugins')
+require('config.remap')
+require('config.yank')
+require('config.cmp')
+require('config.set')
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
