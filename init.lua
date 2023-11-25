@@ -158,8 +158,8 @@ require('lazy').setup({
     priority = 1000,
     config = function()
         vim.g.sonokai_style="shusia"
-        vim.g.sonokai_better_performance='
-        vim.cmd.colorscheme 'onedark'
+        vim.g.sonokai_better_performance=1
+        vim.cmd.colorscheme 'sonokai'
     end,
   },
 
