@@ -153,11 +153,13 @@ require('lazy').setup({
   },
 
   {
-    -- Theme inspired by Atom
-    'navarasu/onedark.nvim',
+    -- Theme inspired by Monokai Pro
+    'sainnhe/sonokai',
     priority = 1000,
     config = function()
-      vim.cmd.colorscheme 'onedark'
+        vim.g.sonokai_style="shusia"
+        vim.g.sonokai_better_performance='
+        vim.cmd.colorscheme 'onedark'
     end,
   },
 
